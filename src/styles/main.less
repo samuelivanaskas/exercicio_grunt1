@@ -1,0 +1,65 @@
+// Fontes
+@fontePrincipal: Roboto, sans-serif;
+@fontedoTitulo: Lobster, cursive;
+
+// Cores
+@cordeFundo: #ead;
+@cordeTexto: #fff;
+@cordefundoBotao: #eaf;
+@cordoBotao: black;
+
+
+body {
+    background-color: @cordeFundo;
+    color: @cordeTexto;
+    font-family: @fontePrincipal;
+}
+
+h1 {
+    font-family: @fontedoTitulo;
+    font-size: 3.2em;
+}
+
+main {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+button {
+    padding: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 16px;
+    font-size: 1.5px;
+    border-radius: 8px;
+    background-color: @cordefundoBotao;
+    color: @cordoBotao;
+}
+
+input {
+    display: block;
+    margin: 16px auto;
+    font-size: 2.5em;
+    max-width: 120px;
+    border: none;
+    text-align: center;
+    background-color: transparent;
+    color: @cordeTexto;
+    border-bottom: 16px solid @cordeTexto;
+}
+
+.resultado {
+    padding: 16px;
+    margin-top: 120px;
+    border: 8px dotted @cordeTexto;
+    display: none;
+
+    span {
+        font-weight: bold;
+        font-size: 3.5em;
+        display: block;
+    }
+}
